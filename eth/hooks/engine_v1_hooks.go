@@ -51,6 +51,7 @@ func AttachConsensusV1Hooks(adaptor *XDPoS.XDPoS, bc *core.BlockChain, chainConf
 								for _, signed := range signedMasternodes {
 									for j, addr := range penSigners {
 										if signed == addr {
+											log.Info("[HookPenalty]", "signed", signed.Hex(), "addr", addr.Hex())
 											// Remove it from dupSigners.
 											penSigners = append(penSigners[:j], penSigners[j+1:]...)
 										}
