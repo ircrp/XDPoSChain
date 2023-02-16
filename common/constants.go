@@ -33,7 +33,7 @@ const (
 var Rewound = uint64(0)
 
 var TIP2019Block = big.NewInt(1)
-var TIPSigning = big.NewInt(3000000)
+var TIPSigning = big.NewInt(1)
 var TIPRandomize = big.NewInt(3464000)
 
 var TIPIncreaseMasternodes = big.NewInt(5000000) // Upgrade MN Count at Block.
